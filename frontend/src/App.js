@@ -28,7 +28,7 @@ function App() {
     }
   };
 
-  const addTodo = async (title, expirationDate) => {
+  const addTodo = async (title, expirationDate, image) => {
     try {
       const response = await fetch(`${API_URL}/todos`, {
         method: 'POST',
@@ -38,6 +38,7 @@ function App() {
         body: JSON.stringify({
           title,
           expiration_date: expirationDate,
+          image: image,
         }),
       });
       

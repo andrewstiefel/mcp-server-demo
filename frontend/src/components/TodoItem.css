@@ -85,3 +85,16 @@
   transform: scale(0.95);
 }
 
+.todo-image-container {
+  margin-top: 8px;
+}
+
+.todo-image {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  display: block;
+}
+
