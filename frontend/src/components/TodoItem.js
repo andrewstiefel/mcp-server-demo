@@ -38,6 +38,15 @@ function TodoItem({ todo, onDelete, onToggleComplete }) {
               {expired && ' (Expired)'}
             </span>
           )}
+          {todo.image && (
+            <div className="todo-image-container">
+              <img 
+                src={`http://localhost:5000/api/images/${todo.image}`} 
+                alt="Todo attachment" 
+                className="todo-image"
+              />
+            </div>
+          )}
         </div>
       </div>
       

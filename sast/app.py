@@ -23,5 +23,5 @@ def debug_route():
     return f"Debug info: {some_variable}"
 
 if __name__ == '__main__':
-    # This is the problematic line that triggers the Semgrep rule
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Fixed: Changed debug mode to False for production security
+    app.run(debug=False, host='0.0.0.0', port=5000)
